@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha comida BOA</title>
+</head>
+
+<body>
+    <h1>Escolha Comida</h1>
+    <button onclick="escolhaComida()">Escolha comidinha</button>
+    <div id="resultado"></div>
+
+    <script>
+        function escolhaComida() {
+            let comida = prompt("Digite e escolha uma comida de sua preferencia entre essas opções - Pizza, Hamburguer, sushi e salada").toUpperCase();
+            let nome = prompt("Digite seu nome");
+
+            let tipoComida = "";
+            switch (comida) {
+                case "PIZZA":
+                    tipoComida = "Pizza";
+                    document.write("otima escolha Pizza é bom")
+                    break;
+                case "HAMBURGUER":
+                    tipoComida = "Hamburguer";
+                     document.write("otima escolha Hamburguer é bom")
+                    break;
+                case "SUSHI":
+                    tipoComida = "Sushi";
+                     document.write("otima escolha Sushi é bom")
+                    break;
+                case "SALADA":
+                    tipoComida = "Salada";
+                     document.write("otima escolha Salada é bom")
+                    break;
+                default:
+                    document.write("Essa comida não está inclusa");
+            }
+            // document.getElementById("resultado").innerHTML = `
+            // ${nome}, Otima escolha ${tipoComida} , é muito bom
+            // `;
+        }
+    </script>
+</body>
+
+</html>
